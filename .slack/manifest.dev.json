@@ -1,7 +1,7 @@
 {
   "display_information": {
     "name": "FL UW E&O (dev)",
-    "description": "FL UW E&O — an AI agent built with Cursor"
+    "description": "E&O / RC Profissional underwriting analyst (dev)"
   },
   "features": {
     "bot_user": {
@@ -12,17 +12,12 @@
       "home_tab_enabled": false,
       "messages_tab_enabled": true,
       "messages_tab_read_only_enabled": false
-    },
-    "agent_view": {
-      "agent_description": "FL UW E&O — an AI agent built with Cursor",
-      "suggested_prompts": []
     }
   },
   "oauth_config": {
     "scopes": {
       "bot": [
         "app_mentions:read",
-        "assistant:write",
         "channels:history",
         "channels:read",
         "chat:write",
@@ -36,9 +31,7 @@
         "mpim:history",
         "reactions:read",
         "reactions:write",
-        "usergroups:read",
-        "users:read",
-        "users:read.email"
+        "users:read"
       ]
     }
   },
@@ -46,12 +39,7 @@
     "event_subscriptions": {
       "bot_events": [
         "app_mention",
-        "message.im",
-        "app_home_opened",
-        "message.channels",
-        "message.groups",
-        "reaction_added",
-        "agent_session_stopped"
+        "message.im"
       ]
     },
     "interactivity": {
@@ -59,7 +47,6 @@
     },
     "org_deploy_enabled": false,
     "socket_mode_enabled": true,
-    "token_rotation_enabled": false,
-    "is_mcp_enabled": false
+    "token_rotation_enabled": false
   }
 }
